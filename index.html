@@ -4,12 +4,11 @@
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        
+        <link type="text/css" rel="stylesheet" href="style.css"> 
         <title>Pig Game</title>
     </head>
-
     <body>
+        <h1 class="player-goal" id="player-goal"></h1>
         <div class="wrapper clearfix">
             <div class="player-0-panel active">
                 <div class="player-name" id="name-0">Player 1</div>
@@ -32,10 +31,14 @@
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
             <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+            <h2 class="player-info" id="player-info"></h2>
+
+            <input type="text" placeholder="Enter Score Goal" class="final-score">
             
             <img src="dice-5.png" alt="Dice" class="dice">
         </div>
-        
+        <!-- JS -->
         <script src="app.js"></script>
     </body>
 </html>
